@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COURSE — MODE Guide</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<style>
+:root{
+  --ink:#1c2430; --muted:#5b6675; --brand:#1d5a6b; --brand2:#8e1b1b; --line:#d9dee5;
+  --key:#e8f2f7; --keyb:#1d6f8b; --trap:#fcecec; --trapb:#b32424; --extra:#f3f3f1; --extrab:#8a8a80;
+  --ex:#eaf6ec; --exb:#2e7d3b; --bg:#ffffff; --th:#eef2f5;
+}
+@page{size:A4;margin:13mm 12mm}
+*{box-sizing:border-box}
+body{font-family:"Segoe UI",Calibri,Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:10.6pt;line-height:1.45;max-width:980px;margin:0 auto;padding:18px 16px}
+h1{font-size:22pt;color:var(--brand2);margin:0 0 4px}
+h2{font-size:15.5pt;color:#fff;background:var(--brand);padding:6px 10px;border-radius:4px;margin:26px 0 10px;break-after:avoid}
+h2.unit{background:var(--brand2);font-size:17pt;text-align:center}
+h3{font-size:12.4pt;color:var(--brand);border-bottom:1.5px solid var(--line);padding-bottom:2px;margin:18px 0 6px;break-after:avoid}
+h4{font-size:11pt;margin:12px 0 4px;color:var(--ink);break-after:avoid}
+p{margin:5px 0}
+ul,ol{margin:4px 0 6px 0;padding-left:22px}
+li{margin:1.5px 0}
+table{border-collapse:collapse;width:100%;margin:6px 0 10px;font-size:9.9pt;break-inside:avoid}
+th,td{border:1px solid var(--line);padding:4px 6px;vertical-align:top;text-align:left}
+th{background:var(--th)}
+figure{margin:10px auto;text-align:center;break-inside:avoid}
+figure img{max-width:100%;border:1px solid var(--line);border-radius:3px}
+figcaption{font-size:9pt;color:var(--muted);margin-top:3px}
+.w60 img{max-width:62%} .w45 img{max-width:46%} .w75 img{max-width:76%} .w35 img{max-width:36%}
+.row{display:flex;gap:8px;justify-content:center;align-items:flex-start;break-inside:avoid}
+.row figure{flex:1;margin:6px 0}
+.box{border-left:4px solid;padding:6px 10px;margin:8px 0;border-radius:0 4px 4px 0;break-inside:avoid}
+.box b.t{display:block;font-size:9.4pt;letter-spacing:.3px;text-transform:uppercase;margin-bottom:2px}
+.key{background:var(--key);border-color:var(--keyb)} .key b.t{color:var(--keyb)}
+.trap{background:var(--trap);border-color:var(--trapb)} .trap b.t{color:var(--trapb)}
+.extra{background:var(--extra);border-color:var(--extrab)} .extra b.t{color:#66665c}
+.ex{background:var(--ex);border-color:var(--exb)} .ex b.t{color:var(--exb)}
+.formula{border:1.5px solid var(--brand2);border-radius:5px;padding:2px 10px;margin:8px 0;background:#fffdfb;break-inside:avoid}
+.src{font-size:8.6pt;color:var(--muted)}
+.cover{border:2px solid var(--brand2);border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.toc{columns:2;column-gap:28px;font-size:10pt}
+.toc li{break-inside:avoid}
+.mcq ol{padding-left:26px}
+.mcq li{margin:7px 0;break-inside:avoid}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:1px 18px;margin-top:2px}
+.ans td:first-child{width:38px;text-align:center;font-weight:bold}
+.ans td:nth-child(2){width:32px;text-align:center;font-weight:bold;color:var(--brand2)}
+.pb{break-before:page}
+.katex{font-size:1.06em}
+@media (max-width:640px){.row{flex-direction:column}.opts{grid-template-columns:1fr}.toc{columns:1}.w60 img,.w45 img,.w35 img{max-width:100%}}
+.q{border:1px solid var(--line);border-radius:5px;padding:6px 10px;margin:8px 0;break-inside:avoid}
+.q>p{margin:0 0 4px}
+.mans{background:#f7faf7;border-left:4px solid var(--exb);padding:5px 9px;font-size:10pt}
+.mans::before{content:"Model answer: ";font-weight:700;color:var(--exb)}
+.rf td:first-child{width:28px;color:#8a94a3;text-align:right}.rf td:last-child{font-weight:600;color:var(--brand2)}
+</style>
+</head>
+<body>
+<!-- ===== COVER ===== -->
+<div class="cover">
+<h1>COURSE — MODE Study Guide</h1>
+<p><b>Covers:</b> list every deck / unit and its slide count.</p>
+<p><b>How to use:</b> mode-specific reading order.</p>
+<p class="src"><b>Note:</b> syllabus units for this exam that were NOT in the provided material.</p>
+<p class="src">Box legend: <span style="color:var(--keyb)"><b>EXAM FOCUS</b></span> = high-probability exam material · <span style="color:var(--trapb)"><b>TRAP</b></span> = commonly confused point · <span style="color:var(--exb)"><b>WORKED EXAMPLE</b></span> = numerical practice · <span style="color:#66665c"><b>EXTRA</b></span> = standard textbook fact <i>not on the slides</i>. [Generated plot] = drawn to explain a concept, not from the slides.</p>
+</div>
+
+<!-- ===== COMPONENT SNIPPETS (copy as needed) =====
+<h2 class="unit pb">UNIT I — Title</h2>                     unit divider (starts new page)
+<h2>Section</h2>  <h3>I.1 Topic (slides 3–9)</h3>  <h4>Sub</h4>
+<div class="box key"><b class="t">Exam focus</b>...</div>
+<div class="box trap"><b class="t">Trap</b>...</div>
+<div class="box ex"><b class="t">Worked example 1 — title</b>...</div>
+<div class="box extra"><b class="t">Extra — title</b>...</div>
+<div class="formula">$$ ... $$</div>                       boxed display formula (KaTeX, use &lt; &gt; for < >)
+<figure class="w60"><img src="img/u1_p24.jpg"><figcaption>What it shows (Unit I, slide 24)</figcaption></figure>
+   widths: w35 w45 w60 w75 (default 100%);  side-by-side: <div class="row"><figure>..</figure><figure>..</figure></div>
+<div class="q"><p><b>A1. [5 marks]</b> Question</p><div class="mans">model answer outline</div></div>
+<div class="mcq"><ol><li>Question<div class="opts"><span>(a) ..</span><span>(b) ..</span><span>(c) ..</span><span>(d) ..</span></div></li></ol></div>
+<table class="ans"><tr><th>Q</th><th>Ans</th><th>Why</th></tr><tr><td>1</td><td>b</td><td>reason</td></tr></table>
+<table class="rf"><tr><td>1</td><td>Rapid-fire question</td><td>Answer</td></tr></table>
+-->
+</body>
+</html>
