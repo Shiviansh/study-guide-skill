@@ -49,6 +49,8 @@ python studytool.py crop  "Unit 2.pdf" 15 280 161 689 444 img/u2_p15.jpg
 ## 4. Write the HTML
 
 Start from `assets/template.html` — it has the CSS, KaTeX auto-render and a comment block with copy-paste snippets for every component. House style details are in `references/style.md`; the essentials:
+- **Write in plain, simple language by default, but never change the course's keywords**: keep the slide/teacher wording of terms and definitions, and add a plain gloss after them. Short sentences, jargon explained on first use, an "In simple words" box where an idea is hard (details in `references/style.md`, Writing).
+- **Spell out every abbreviation at first use** (and list them in an "Abbreviations (full forms)" table); never leave letters like MPB, MSB, ATC unexplained.
 - Cover box: course, decks covered with slide counts, how to use, **missing-scope note**, box legend.
 - Quick-revision one-liners → unit sections numbered like `II-B.4 Coherence time (slides 14–19)`.
 - Boxes: **Exam focus** (blue), **Trap** (red), **Worked example** (green, fully solved), **Extra** (grey). Anything not on the slides goes in an Extra box so the student knows it wasn't taught — never pass outside knowledge off as slide content.

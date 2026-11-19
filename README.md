@@ -21,6 +21,8 @@ Every guide has a cover (decks covered, how to use it, **what is missing from th
 - **Worked example** (green): fully solved, with units.
 - **Extra** (grey): anything *not* taught in your slides, so you know what came from outside.
 
+Writing is **plain and simple by default**: short sentences, an "In simple words" box where an idea is hard, every abbreviation spelled out at first use (plus an abbreviations table), and your course's own keywords kept exactly as the slides word them, with a plain explanation added after them.
+
 If you mention the exam time ("tomorrow", "in 6 hours"), it adds a revision plan to the cover.
 
 ---

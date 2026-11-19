@@ -16,7 +16,16 @@
 | `.q` + `.mans` | Exam question with marks + model-answer outline |
 
 ## Writing
-- Simple English, short bullets, bold the keyword the examiner looks for.
+- **Plain language is the default** (user asked for this), **but never replace the course's keywords.** Write for a student meeting the topic for the first time, in a way that still scores marks:
+  - Keep every term, definition phrase and label exactly as the slides/teacher word it (e.g. "restrict output", "homogeneous", "differentiated", "under/over-allocates", "unpriced by-product", "third party", "offset (countervail)", "overconsumption", "irretrievable costs", "hidden information"). The examiner marks these words. Never swap them for a simpler synonym.
+  - Make it simple by *adding*, not replacing: put the slide wording first in bold, then a plain gloss in brackets or the next sentence ("**restrict output** (sell less)").
+  - Plain wording is for the explanation around the keywords: short sentences, everyday words in connecting text, jargon explained on first use.
+  - Add a green `box key` titled "In simple words" where an idea is easy to lose (the intuition), before the "Exam focus" box.
+  - **Spell out every abbreviation and symbol at its first use** in the notes (e.g. "MPB (marginal private benefit)", "CR4 (four-firm concentration ratio)", "NPPA (National Pharmaceutical Pricing Authority)", "AVC (average variable cost)"), in the one-liners too, and again in the first caption/example if far from the first use. Also add an "Abbreviations (full forms)" table (short form | full form) at the start of the formula-sheet section, and in any interactive quiz as a collapsible list. Never leave MSB, MPB, ATC, HHI-style letters unexplained.
+  - Worked examples as numbered steps ("Step 1, what the market does: ...").
+  - Table cells, one-liners, rapid-fire answers, traps and formula-sheet rows keep the slide keywords too; only shorten the connecting words.
+  - Plain does not mean vague: keep every number, condition and exam keyword intact.
+- Short bullets, bold the keyword the examiner looks for.
 - Section headings carry slide ranges: `II-A.6 Two-ray model (slides 22–29)`.
 - Derivations as numbered steps: geometry → approximation → result, noting each assumption (e.g. "narrowband: Δd/c ≪ 1/W").
 - When a slide asks a rhetorical question ("Benefits? Consequences?"), answer it in an Extra box.
